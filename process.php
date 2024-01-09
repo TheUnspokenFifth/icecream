@@ -8,6 +8,21 @@
     <title>Ice Cream Order Summary</title>
 </head>
 <body>
-<h1>Thank you for your order!</h1>
+    <h1>Thank you for your order!</h1>
+
+    <?php
+        echo "<pre>";
+        var_dump($_POST);
+        echo "</pre>";
+
+        $scoops = $_POST['scoops'];
+        $flavors = $_POST['flavor'];
+        $cone = $_POST['cone'];
+        $flavorString = implode(", ", $flavors);
+        //print a summary
+    echo "<p>$scoops scoops</p>";
+    echo "<p> Flavors: $flavorString</p>";
+    echo "<p>$cone cone</p>"
+    ?>
 </body>
 </html>
