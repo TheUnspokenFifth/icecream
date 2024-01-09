@@ -19,10 +19,11 @@
         $flavors = $_POST['flavor'];
         $cone = $_POST['cone'];
         $flavorString = implode(", ", $flavors);
+
         //print a summary
     echo "<p>$scoops scoops</p>";
     echo "<p> Flavors: $flavorString</p>";
-    echo "<p>$cone cone</p>"
+    echo "<p>Cone: $cone</p>"
     ?>
 </body>
 </html>
